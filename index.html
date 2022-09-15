@@ -1,18 +1,18 @@
 <!-- <?php
 
-$dosen = [
-    ["Shiranami Ramune (白波らむね)", "img/ramnueVTuber.jpg", "shiranami-ramune"],
-    ["Pusu ProSeka (ぷす)", "img/Pusu.png", "pusu-proseka"],
-    ["Nachoneko (甘城なつき)", "img/nacho.jpg", "nachoneko"],
-    ["Usada Pekora (兎田ぺこら)", "img/pekora.jpg", "usada-pekora"],
-    ["Hina Saeki (佐伯ヒナ)", "img/nana.png", "hina-saeki"],
-    ["Arya Bayu Anggara Putra", "img/eyes.jpg", "arya-bayu-anggara-putra"],
-    ["Tokoyami Towa (常闇トワ)", "img/towa.png", "tokoyami-towa"],
-    ["Minato Aqua (湊あくあ)", "img/aqua.jpg", "minato-aqua"],
-    ["Anya Melfissa (アーニャ)", "img/4mya.jpg", "anya-melfissa"]
-];
+        $dosen = [
+            ["Shiranami Ramune (白波らむね)", "img/ramnueVTuber.jpg", "shiranami-ramune"],
+            ["Pusu ProSeka (ぷす)", "img/Pusu.png", "pusu-proseka"],
+            ["Nachoneko (甘城なつき)", "img/nacho.jpg", "nachoneko"],
+            ["Usada Pekora (兎田ぺこら)", "img/pekora.jpg", "usada-pekora"],
+            ["Hina Saeki (佐伯ヒナ)", "img/nana.png", "hina-saeki"],
+            ["Arya Bayu Anggara Putra", "img/eyes.jpg", "arya-bayu-anggara-putra"],
+            ["Tokoyami Towa (常闇トワ)", "img/towa.png", "tokoyami-towa"],
+            ["Minato Aqua (湊あくあ)", "img/aqua.jpg", "minato-aqua"],
+            ["Anya Melfissa (アーニャ)", "img/4mya.jpg", "anya-melfissa"]
+        ];
 
-?> -->
+        ?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +22,7 @@ $dosen = [
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>NachoNeko (Member) :: Asosiasi Dosen Bekasi Raya</title>
+    <title>Asosiasi Dosen Bekasi Raya :: DOSEN</title>
 
     <link rel="stylesheet" href="https://denonbu.jp/dcKr8evJWB/wp-content/themes/denonbu/dest/style.css">
     <link rel="stylesheet" href="css/style.css">
@@ -115,123 +115,177 @@ $dosen = [
     </header>
 
     <div class="wrapper">
-        <div class="container" style="min-height: 100%;">
-            <div class="sampul" data-barba="sampul" aria-live="polite">
-                <a href="" data-lightbox="roadtrip">
-                    <div class="sampul-bg" style="background-image: url('http://localhost/asdos/assets/img/banner/ramnue.jpg');"></div>
-                </a>
-            </div>
-            <div class="movie-list" style="margin-top: 0;margin-left:auto;">
-                <div class="container-xxl">
-                    <div class="row">
-                        <div class="col" style="margin-right: 20px;">
-                            <div class="profil-wrap text-left" style="position:relative;margin-top: -125px;">
-                                <a href="" data-lightbox="roadtrip" data-title="" id="imgDosen">
-                                    
+        <div class="container">
+            <ul class="movie-list" style="width: 100%;margin-top: 100px;">
+                <li class="movie-item" style="max-width: 100%;margin:0 10px;font-family: 'M PLUS 1p', sans-serif;">
+                    <form class="form-inline d-flex" action="" method="post">
+                        <input class="form-control" type="search" placeholder="Cari..." aria-label="Search" style="border-radius: 0;width:100%;" id="searchDosen" name="keyword" autocomplete="off">
+                    </form>
+                </li>
+            </ul>
+            <ul class="movie-list data" style="width: 100%;margin-top: 25px;font-family:'Orbitron', sans-serif;" id="dataDosen">
+
+                <!-- <?php foreach ($dosen as $dsn) : ?>
+                    <li class="movie-item" style="max-width: 100%;height:400px;">
+                        <div class="movie-item-button">
+                            <figure class="movie-item-thumb" style="height:100%;">
+                                <a href="https://wapernabati.github.io/dosen/<?= $dsn[2] ?>/">
+                                    <img class="news-item-thumb-main" style="background-image:url(<?= $dsn[1] ?>);" id="imgAvA">
+                                    <div class="card-img-overlay">
+                                        <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                            <?= $dsn[0] ?>
+                                        </p>
+                                    </div>
                                 </a>
-                                <div class="col">
-                                    <!-- <?php if ($dosen2['status_active'] == 0) { ?>
-                                        <div class="btn stat-non-active" title="Offline">
-                                            Offline
-                                        </div>
-                                    <?php } else { ?>
-                                        <div class="btn stat-active" title="Online">
-                                            Online
-                                        </div>
-                                    <?php } ?> -->
-                                </div>
-                            </div>
+                            </figure>
+                            <div class="movie-item-detail" style="padding:0;"></div>
                         </div>
-                        <div class="col-xl col-lg col-md-7" style="padding-left:0;margin-top: 15px;">
-                            <div class="row m-0" style="font-size:30px;text-align:left;font-weight:bold;">
-                                <div class="col" style="margin-bottom:20px;">
-                                    <i class="fa-solid fa-hashtag" style="margin-right: 5px;"></i>
+                    </li>
+                <?php endforeach; ?> -->
+
+                <li class="movie-item" style="max-width: 100%;height:400px;">
+                    <div class="movie-item-button">
+                        <figure class="movie-item-thumb" style="height:100%;">
+                            <a href="https://wapernabati.github.io/dosen/shiranami-ramune/">
+                                <img class="news-item-thumb-main" style="background-image:url(img/ramnueVTuber.jpg);" id="imgAvA">
+                                <div class="card-img-overlay">
+                                    <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                        Shiranami Ramune (白波らむね)
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Nomor Induk Dosen</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span>
-                                </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Nama Dosen</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span><p id="namaDosen"></p>
-                                </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Perguruan Tinggi</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span>
-                                </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Status Ikatan Kerja</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span>
-                                </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Science</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span>
-                                </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Certificate</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span>
-                                </div>
-                            </div>
-                            <div class="row m-0" style="font-size:20px;">
-                                <div class="col" style="margin-bottom:10px;">Jabatan Fungsional</div>
-                                <div class="col" style="margin-bottom:10px;">
-                                    <span class="mr-05">:</span>
-                                </div>
-                            </div>
-                            <!-- <div class="row m-0" style="font-size:20px;">
-                            <div class="col" style="margin-bottom:10px;line-height:2;">Sosial Media</div>
-                            <div class="col" style="margin-bottom:10px;">
-                                <span class="mr-05">:</span>
-                                <div class="btn" style="border-radius: 3px;background-color:#5282e5;margin-bottom:5px;">
-                                    <i class="fa-brands fa-discord" title="WaferNabati#1234"></i>
-                                </div>
-                                <div class="btn" style="border-radius: 3px;background-color:#0077ff;margin-bottom:5px;">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </div>
-                                <div class="btn" style="border-radius: 3px;background-color:#00beff;margin-bottom:5px;">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </div>
-                                <div class="btn" style="border-radius: 3px;background-color:#000;margin-bottom:5px;">
-                                    <i class="fa-brands fa-github"></i>
-                                </div>
-                                <div class="btn" style="border-radius: 3px;background-color:#ff0000;margin-bottom:5px;">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </div>
-                            </div>
-                        </div> -->
-                        </div>
+                            </a>
+                        </figure>
+                        <div class="movie-item-detail" style="padding:0;"></div>
                     </div>
-                    <div class="single-navi" style="margin-top:30px;">
-                        <ul class="single-navi-list">
-                            <li class="single-navi-item" data-navi="prev">
-                                <a href="" rel="prev" style="background-color: #FFF;color:#000;font-weight:bold;border-radius:3px;">Prev</a>
-                            </li>
-                            <li class="single-navi-item" data-navi="back">
-                                <a href="https://wapernabati.github.io/dosen/" style="background-color: #FFF;color:#000;font-weight:bold;border-radius:3px;">
-                                    <span>Kembali</span>
-                                </a>
-                            </li>
-                            <li class="single-navi-item" data-navi="next">
-                                <a href="" rel="next" style="background-color: #FFF;color:#000;font-weight:bold;border-radius:3px;">Next</a>
-                            </li>
-                        </ul>
+                </li>
+
+                <li class='movie-item' style='max-width: 100%;height:400px;'>
+                    <div class='movie-item-button'>
+                        <figure class='movie-item-thumb' style='height:100%;'>
+                            <a href='https://wapernabati.github.io/dosen/pusu-proseka/'>
+                                <img class='news-item-thumb-main' style='background-image:url(img/Pusu.png);'>
+                                <div class='card-img-overlay'>
+                                    <p class='carousel-caption btn-pink' style='font-weight: bold;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;'>Pusu ProSeka (ぷす)</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class='movie-item-detail' style='padding:0;'></div>
                     </div>
-                </div>
-            </div>
+                </li>
+
+                <li class='movie-item' style='max-width: 100%;height:400px;'>
+                    <div class='movie-item-button'>
+                        <figure class='movie-item-thumb' style='height:100%;'>
+                            <a href='https://wapernabati.github.io/nachoneko/'>
+                                <img class='news-item-thumb-main' style='background-image:url(img/nacho.jpg);'>
+                                <div class='card-img-overlay'>
+                                    <p class='carousel-caption btn-pink' style='font-weight: bold;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;'>Nachoneko (甘城なつき)</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class='movie-item-detail' style='padding:0;'></div>
+                    </div>
+                </li>
+
+                <li class="movie-item" style="max-width: 100%;height:400px;">
+                    <div class="movie-item-button">
+                        <figure class="movie-item-thumb" style="height:100%;">
+                            <a href="https://wapernabati.github.io/dosen/usada-pekora/">
+                                <img class="news-item-thumb-main" style="background-image:url(img/pekora.jpg);" id="imgAvA">
+                                <div class="card-img-overlay">
+                                    <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                        Usada Pekora (兎田ぺこら)
+                                    </p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="movie-item-detail" style="padding:0;"></div>
+                    </div>
+                </li>
+
+                <li class='movie-item' style='max-width: 100%;height:400px;'>
+                    <div class='movie-item-button'>
+                        <figure class='movie-item-thumb' style='height:100%;'>
+                            <a href='https://wapernabati.github.io/hina-saeki/'>
+                                <img class='news-item-thumb-main' style='background-image:url(img/nana.png);'>
+                                <div class='card-img-overlay'>
+                                    <p class='carousel-caption btn-pink' style='font-weight: bold;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;'>Hina Saeki (佐伯ヒナ)</p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class='movie-item-detail' style='padding:0;'></div>
+                    </div>
+                </li>
+
+                <li class="movie-item" style="max-width: 100%;height:400px;">
+                    <div class="movie-item-button">
+                        <figure class="movie-item-thumb" style="height:100%;">
+                            <a href="https://wapernabati.github.io/wafernabati/">
+                                <img class="news-item-thumb-main" style="background-image:url(img/eyes.jpg);" id="imgAvA">
+                                <div class="card-img-overlay">
+                                    <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                        Arya Bayu Anggara
+                                    </p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="movie-item-detail" style="padding:0;"></div>
+                    </div>
+                </li>
+
+                <li class="movie-item" style="max-width: 100%;height:400px;">
+                    <div class="movie-item-button">
+                        <figure class="movie-item-thumb" style="height:100%;">
+                            <a href="https://wapernabati.github.io/dosen/tokoyami-towa/">
+                                <img class="news-item-thumb-main" style="background-image:url(img/towa.png);" id="imgAvA">
+                                <div class="card-img-overlay">
+                                    <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                        Tokoyami Towa (常闇トワ)
+                                    </p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="movie-item-detail" style="padding:0;"></div>
+                    </div>
+                </li>
+
+                <li class="movie-item" style="max-width: 100%;height:400px;">
+                    <div class="movie-item-button">
+                        <figure class="movie-item-thumb" style="height:100%;">
+                            <a href="https://wapernabati.github.io/dosen/minato-aqua/">
+                                <img class="news-item-thumb-main" style="background-image:url(img/aqua.jpg);" id="imgAvA">
+                                <div class="card-img-overlay">
+                                    <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                        Minato Aqua (湊あくあ)
+                                    </p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="movie-item-detail" style="padding:0;"></div>
+                    </div>
+                </li>
+
+                <li class="movie-item" style="max-width: 100%;height:400px;">
+                    <div class="movie-item-button">
+                        <figure class="movie-item-thumb" style="height:100%;">
+                            <a href="https://wapernabati.github.io/dosen/anya-melfissa/">
+                                <img class="news-item-thumb-main" style="background-image:url(img/4mya.jpg);" id="imgAvA">
+                                <div class="card-img-overlay">
+                                    <p class="carousel-caption btn-pink" style="font-weight: bold;font-family:'Orbitron', sans-serif;font-size: 16px;padding:5px;text-align:center;box-shadow:inset 0 0 6px rgb(255 255 255 / 80%);bottom:0;">
+                                        Anya Melfissa (アーニャ)
+                                    </p>
+                                </div>
+                            </a>
+                        </figure>
+                        <div class="movie-item-detail" style="padding:0;"></div>
+                    </div>
+                </li>
+
+            </ul>
         </div>
     </div>
+
+
     <div class="footer-wrapper">
         <script src="js/footerS.js"></script>
     </div>
@@ -239,7 +293,7 @@ $dosen = [
     <script src="https://denonbu.jp/dcKr8evJWB/wp-content/themes/denonbu/dest/script.js?t=2"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script>
-        
+
     </script>
     <script src="js/ourScripts.js"></script>
 </body>

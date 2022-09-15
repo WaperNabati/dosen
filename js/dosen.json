@@ -1,0 +1,15 @@
+[
+    {"type":"header","version":"5.1.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+    {"type":"database","name":"asosiasi"},
+    {"type":"table","name":"dosen2","database":"asosiasi","data":
+    [
+    {"id":"1","nid":"43A87007160269","name":"Arya Bayu Anggara Putra","university":"STMIK Bani Saleh Bekasi","work_status":"Dosen Tidak Tetap","science":"Web Developer and Translator","certificate":"Sarjana (S1)","status_active":"1","jafung":"","avatar":"nacho.jpg"},
+    {"id":"2","nid":"43A87007160213","name":"Usada Pekora (兎田ぺこら)","university":"hololive","work_status":"Dosen Tetap","science":"Content Creator","certificate":"Magister (S2)","status_active":"1","jafung":"","avatar":"pekora.jpg"},
+    {"id":"3","nid":"43A87007160124","name":"Chocolate (チョコ)","university":"Independent","work_status":"Dosen Tetap","science":"Hukum Ekonomi Syariah","certificate":"Diploma (D3)","status_active":"0","jafung":"","avatar":"cokelatVT.jpg"},
+    {"id":"4","nid":"43A87007160125","name":"Anya Melfissa (アーニャ)","university":"STMIK Bandung","work_status":"Dosen Tidak Tetap","science":"Teknisi Medis Gawat Darurat","certificate":"Sekolah Menengah Atas (SMA)","status_active":"0","jafung":"","avatar":"4mya.jpg"},
+    {"id":"5","nid":"43A87007160842","name":"Minato Aqua (湊あくあ)","university":"STMIK Jepang","work_status":"Dosen Tetap","science":"Perawat Kesehatan Mental","certificate":"Magister (S2)","status_active":"1","jafung":"","avatar":"aqua.jpg"},
+    {"id":"6","nid":"43A87007160583","name":"Shirana Ramune (白波らむね)","university":"Universitas Negeri Jakarta","work_status":"Dosen Tetap","science":"Data Scientist","certificate":"Magister (S2)","status_active":"1","jafung":"","avatar":"ramnueVTuber.jpg"},
+    {"id":"7","nid":"43A87007160847","name":"Tokoyami Towa (常闇トワ)","university":"Universitas Gadjah Mada","work_status":"Dosen Tetap","science":"Game Developer","certificate":"Sarjana (S1)","status_active":"0","jafung":"","avatar":"towa.png"}
+    ]
+    }
+    ]
